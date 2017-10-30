@@ -1,0 +1,53 @@
+/**app.wxss**/
+@import './resources/styles/layout/iconfont';
+@import './resources/styles/layout/fontawesome';
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.flex-box{
+  display:flex;
+  flex-direction:row;
+}
+.flex-item{
+  flex:1;
+}
+.text-limit-2-line{
+  overflow:hidden;
+  text-overflow:
+  ellipsis;
+  display:-webkit-box;
+  display:box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  word-break:break-all
+  }
+.footer{
+  height: 45px;
+}
+.footer-nav{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 45px;
+  background-color: #fff;
+  border-top: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+  color: #777;
+}
+.footer>.icon-nav{
+  font-size:24px;
+  color:#fff;
+  text-align:center;
+  height: 25px;
+  line-height: 25px;
+
+}

@@ -1,0 +1,197 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+swiper{
+  height: 300rpx;
+}
+.slide-image{
+  width: 750rpx;
+  height: 300rpx;
+}
+.navigator-hover{
+  color:#ffa90a;
+}
+.nav{
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+.text-1{
+  font-size:14px;
+  color: #555 ;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.nav .icon-message{
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+.icon-content{
+  margin: 8px auto 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.floor-name{
+    position: relative;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.floor-href{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    font-size: 14px;
+    color: #a3a3a3;
+    width: 30px;
+    text-align: center;
+}
+.floor-image{
+  width: 750rpx;
+  height: 234rpx;
+}
+.goods-2{
+  border-top: 1px solid #dedede;
+}
+.goods-2 navigator:first-child{
+  border-right: 1px solid #dedede;
+}
+.goods-2 .goods-image{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.goods-2 .goods-image image{
+  width: 250rpx;
+  height: 250rpx;
+}
+.goods-2 .goods-name{
+    padding: 0 10px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 18px;
+    color: #555;
+    text-align: center;
+}
+.goods-2 .goods-price{
+    font-size: 14px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    color: #777;
+}
+.goods-2 .instalments{
+    background: #fff;
+    border: 1px solid #f05b63;
+    border-radius: 60px;
+    width: 40px;
+    height: 15px;
+    line-height: 15px;
+    color: #f05b63;
+    display: inline-block;
+}
+.goods-4{
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+.goods-4 navigator{
+  border-right:1px solid #dedede
+}
+.goods-4 navigator:last-child{
+  border-right: none;
+}
+.goods-4 .goods-image{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.goods-4 .goods-image image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.goods-4 .goods-name{
+    padding: 0 5px;
+    font-size: 14px;
+    height: 36px;
+    line-height: 18px;
+    color: #555;
+    text-align: center;
+}
+.goods-4 .goods-price{
+    font-size: 14px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    color: #777;
+}
+.goods-4 .instalmentsBlock{
+  color: #777;
+  text-align: center;
+  height: 30px;
+}
+.goods-4 .instalments{
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid #f05b63;
+    border-radius: 60px;
+    width: 40px;
+    height: 15px;
+    line-height: 15px;
+    color: #f05b63;
+    display: inline-block;
+}
+.footer{
+  height: 45px;
+}
+.footer-nav{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 45px;
+  background-color: #fff;
+  border-top: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+  color: #777;
+}
+.footer .icon-message{
+  font-size:24px;
+  color:#ffa90a;
+  text-align:center;
+  height: 25px;
+  line-height: 25px;
+
+}
+.footer .nav-text{
+  font-size:14px;
+  text-align:center;
+  height: 20px;
+}

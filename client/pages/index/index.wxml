@@ -1,0 +1,90 @@
+<!--index.wxml-->
+<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}'>
+  <block wx:for='{{bannerInfo}}'>
+    <swiper-item>
+      <navigator url="https://xyk.cebbank.com{{item.href}}">
+        <image src='{{item.src}}' class='slide-image' />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<!--中部导航-->
+<view class='nav'>
+  <view class='flex-box'>
+    <view class='flex-item'>
+      <navigator url='/pages/logs/logs' hover-class='navigator-hover'>
+        <view class='icon-content' style='background-color:#ff9325'>
+          <view class='icon iconfont icon-message'></view>
+        </view>
+        <view class='text-1'>全部分类</view>
+      </navigator>
+    </view>
+    <view class='flex-item'>
+      <navigator url='/pages/logs/logs' hover-class='navigator-hover'>
+        <view class='icon-content' style='background-color:#f05b63'>
+          <view class='icon iconfont icon-message'></view>
+        </view>
+        <view class='text-1'>品牌馆</view>
+      </navigator>
+    </view>
+    <view class='flex-item'>
+      <navigator url='/pages/logs/logs' hover-class='navigator-hover'>
+        <view class='icon-content' style='background-color:#79abfe'>
+          <view class='icon iconfont icon-message'></view>
+        </view>
+        <view class='text-1'>活动专区</view>
+      </navigator>
+    </view>
+    <view class='flex-item'>
+      <navigator url='/pages/logs/logs' hover-class='navigator-hover'>
+        <view class='icon-content' style='background-color:#b78cdd'>
+          <view class='icon iconfont icon-message'></view>
+        </view>
+        <view class='text-1'>个人中心</view>
+      </navigator>
+    </view>
+  </view>
+</view>
+<!--楼层数据-->
+<view class="floors">
+  <block wx:for="{{floorsInfo}}">
+    <view class='floor'>
+      <view class='floor-name'>
+        <text>{{item.floorName}}</text>
+        <navigator url='/pages/logs/logs' hover-class='navigator-hover' class="floor-href" wx:if="{{item.floorHref}}">
+          <text class='fa fa-ellipsis-h'></text>
+        </navigator>
+      </view>
+      <view class='floor-ad'>
+        <navigator url="{{floorImageHref}}" hover-class="navigator-hover">
+          <image src='{{item.floorImage}}' class='floor-image'></image>
+        </navigator>
+      </view>
+      <view class='goods-2 flex-box'>
+        <navigator url="" class='flex-item' wx:for="{{item.goods2}}">
+          <view class='goods-image'>
+            <image src="{{item.goodsImage}}"></image>
+          </view>
+          <view class='goods-name text-limit-2-line'>{{item.goodsName}}</view>
+          <view class='goods-price'>{{item.goodsPrice}} x
+            <view class='instalments'>{{item.goodsInstalments}}</view>
+          </view>
+        </navigator>
+      </view>
+      <view class='goods-4 flex-box'>
+        <navigator url="" class='flex-item' wx:for="{{item.goods4}}">
+          <view class='goods-image'>
+            <image src="{{item.goodsImage}}"></image>
+          </view>
+          <view class='goods-name text-limit-2-line'>{{item.goodsName}}</view>
+          <view class='goods-price'>{{item.goodsPrice}}
+          </view>
+          <view class='instalmentsBlock'>
+           <text> x </text><view class='instalments'> {{item.goodsInstalments}}</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </block>
+</view>
+<view wx:if="{{bottomFlag}}" style="text-align:center;font-size:14px;height:30px;line-height:30px;background-color:#f5f5f5;color:#777;">-我是有底线的-</view>

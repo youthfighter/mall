@@ -1,0 +1,2 @@
+<view style="text-align:center;margin-top:50px">{{tip}}</view>
+<navigator open-type='switchTab' url="/pages/index/index" style="text-align:center;margin-top:50px">返回首页</navigator>
